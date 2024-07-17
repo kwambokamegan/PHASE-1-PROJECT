@@ -1,0 +1,117 @@
+{
+    "dresses": [
+        {
+            "id":1,
+            "name": "Pink Ball Gowm",
+            "image": "https://www.lisposa.com/cdn/shop/products/Wedding-Dress-Style-3114-a.jpg?v=1590573852&width=360",
+            "description": "This is a baby pink ball gowm dress that gives princess vibes.This dress is sure to make your wedding day feel like a happily ever after wedding.",
+            "price": "250,000"
+            },
+
+        {
+            "id":2,
+            "name":"White Mermaid Dress",
+            "image":"https://www.lisposa.com/cdn/shop/products/Prom-Dresses-Style-3519.jpg?v=1602314222&width=360",
+            "description": "This is a baby pink mermaid dress with a cute trail . It comes with a beautiful lace veil and shoes.",
+            "price": "200,000"
+        },
+
+        {
+            "id": 3,
+            "name":"Gold and White Gown",
+            "image": "https://www.lisposa.com/cdn/shop/products/Lisposa-Wedding-Dress-Style-3983.jpg?v=1616223960&width=640",
+            "description": "This is a dress guaranteed to make you feel like royalty on your wedding day.It comes accompained with matching jewellery that will tie you whole look together.",
+            "price": "120,000"
+        },
+
+        {
+            "id":4,
+            "name":"Lace Wedding Dress",
+            "image":"https://media.istockphoto.com/id/1401350898/photo/wedding-dress-in-a-beam-of-light-on-a-black-background.jpg?s=612x612&w=0&k=20&c=mfwBXkLdUC4m6j8R0pJW0FFzZO3PnC6ZBI_t2LxgOBo=",
+            "price": "150,000",
+            "description": "This is a pure white lace weding dress.It is cote and light guaranteed for comfort and style on your special day"
+        },
+
+        {
+            "id": 5,
+            "name": "Off Shoulder Wedding Dress",
+            "image":"https://www.lisposa.com/cdn/shop/products/Wedding-Dress-Style-3086.jpg?v=1590214125&width=360",
+            "description":"The off shoulder wedding dress is designed to make you feel classy and sexy. It is recommended for those who dnt want the formallity of a wedding gown but still want to look classy.",
+            "price":"80,000"
+        },
+
+        {
+            "id":6,
+            "name": "Long Sleeved Ball Gown",
+            "image": "https://www.lisposa.com/cdn/shop/products/Wedding-Dress-Style-3094-a.jpg?v=1590225215&width=360",
+            "description":"This is a cute ball gown with long sleeves for all the conservative girlies who still want to look good on their wedding day. We got you covered babe!",
+            "price": "180,000"
+        },
+
+        {
+            "id":7,
+            "name": "High Neck Wedding Dress",
+            "image": "https://www.lisposa.com/cdn/shop/products/Long-Sleeves-Mermaid-Wedding-Dress-High-Neck.jpg?v=1627453323&width=360",
+            "description": "This is a lace high neck dress with a mermaid design at the bottom and a cute attatched trail that can be taken off or adjusted according to the brides wishes.",
+            "price": "120,000"
+        },
+
+        { 
+            "id":8,
+            "name": "Jewelled Dress",
+            "image": "https://i.etsystatic.com/16136224/r/il/7e7890/4060613777/il_600x600.4060613777_g0yh.jpg",
+            "description": "This one is for the brides who want to shine on your wedding day. THis dress is sure to make you SINE BRIGHT LIKE A DIAMOND!",
+            "price": "220,000"
+        },
+
+        {
+            "id":9,
+            "name": "Summer Wedding Dress",
+            "image": "https://www.lisposa.com/cdn/shop/products/Mermaid-Sweetheart-Lace-Wedding-Dresses.jpg?v=1628076753&width=360",
+            "description": "This light summer dress is perfect for a wedding on the beach or in a flower field. ",
+            "price": "100,000"
+           
+        },
+
+        {
+            "id":10,
+            "name": "Floral Wedding Dress",
+            "image": "https://i.etsystatic.com/38022401/r/il/2bd38c/5614921044/il_600x600.5614921044_n18p.jpg",
+            "description":"For all the flower loving gitls this dress has flowers embedded in it giving it a cute simple girly vibe.",
+            "price": "120,000" 
+        },
+
+        {
+            "id":11,
+            "name": "Short Sheath Dress",
+            "image": "https://www.lisposa.com/cdn/shop/products/Wedding-Dress-Style-3215-a.jpg?v=1592549685&width=360",
+            "description":"THis short sheath dress is comfortable for dancing and partying o your special day.So that you dont have to worry about the weight of a formal wedding gown.",
+            "price": "120,000" 
+        },
+
+        {
+            "id":12,
+            "name": "Lace Mermaid dress",
+            "image": "https://www.lisposa.com/cdn/shop/products/Lace-Sweetheart-Mermaid-Wedding-Dress.jpg?v=1629785642&width=360",
+            "description":"This dresses cute design ensures that you show off your curves and have a beautiful trail on your wedding day.",
+            "price": "120,000" 
+        }, 
+        
+        {
+            "id":13,
+            "name": "Corset Dress",
+            "image": "https://www.lisposa.com/cdn/shop/products/Mermaid-Sparkly-Corset-Wedding-Dress.jpg?v=1645607653&width=360",
+            "description":"Wanna show off your cute waist,this dress has got you covered.This off shoulder mermaid corset dress ensures you feel sexy and cute all at one go.",
+            "price": "180,000"
+        },
+
+        {
+            "id":14,
+            "name": "Satin Dress",
+            "image": "https://www.lisposa.com/cdn/shop/products/Wedding-Dress-Style-3163.jpg?v=1591683388&width=360",
+            "description":"This ismple dress has a sexy v shaped neck line and also has pockets!!How amazing is that!!!",
+            "price": "100,000" 
+        }
+
+    ]
+}

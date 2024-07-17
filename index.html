@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megan's Dress Collection</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>HAPPILY EVER AFTER DRESSES</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="left">
+                <h2>Dress List</h2>
+                <div id="dress-list"></div>
+            </div>
+            <div class="right">
+                <h2>Selected Dress</h2>
+                <div id="dress-display">
+                    <p>Select a dress from the list...</p>
+                    <div id="alterations-section">
+                        <h3>Alterations Request</h3>
+                        <textarea id="alterations-text" rows="4" placeholder="Enter your alteration requests..."></textarea>
+                        <button id="submit-alterations">Submit Alterations</button>
+                    </div>
+                    <button id="purchase-button">Purchase Dress</button>
+                </div>
+            </div>
+        </div>
+        <div id="cart-message"></div>
+        <div id="cart-items"></div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
