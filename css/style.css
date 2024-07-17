@@ -73,7 +73,7 @@ header {
     cursor: pointer; /* Add pointer cursor */
 }
 
-.dress-item:hover {
+.dress-item:hover.dress-name {
     background-color: lightblue; /* Change background color on hover */
 }
 
@@ -84,8 +84,8 @@ header {
 }
 
 .dress-name {
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for name */
-    color: #fff;
+    background-color: crimson; /* Semi-transparent background for name */
+    color: #ffffff;
     width: 100%;
     text-align: center;
     padding: 10px 0;
