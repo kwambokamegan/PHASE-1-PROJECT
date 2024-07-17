@@ -2,18 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Playwrite+BE+VLG:wght@100..400&family=Playwrite+CL:wght@100..400&family=Playwrite+CU:wght@100..400&display=swap');
 
-
-
-h1{
-    font-family:Playwrite BE VLG ;
+h1 {
+    font-family: Playwrite BE VLG;
 }
 
 h2 {
     font-size: 1.6rem;
     margin-bottom: 10px;
-    font-family:Kalnia Glaze ;
-} 
-
+    font-family: Kalnia Glaze;
+}
 
 * {
     margin: 0;
@@ -30,7 +27,7 @@ body {
 
 header {
     background-color: crimson;
-    color: #fff;
+    color: #F4C2C2;
     text-align: center;
     padding: 10px 0;
 }
@@ -49,8 +46,6 @@ header {
 .right {
     flex: 2;
 }
-
-
 
 #dress-list {
     display: grid;
@@ -73,7 +68,7 @@ header {
     cursor: pointer; /* Add pointer cursor */
 }
 
-.dress-item:hover.dress-name {
+.dress-item:hover .dress-name {
     background-color: lightblue; /* Change background color on hover */
 }
 
@@ -84,8 +79,8 @@ header {
 }
 
 .dress-name {
-    background-color: crimson; /* Semi-transparent background for name */
-    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for name */
+    color: #fff;
     width: 100%;
     text-align: center;
     padding: 10px 0;
@@ -95,4 +90,16 @@ header {
     box-sizing: border-box;
     transition: background-color 0.3s ease; /* Smooth background color transition */
     pointer-events: none; /* Prevent click events on the name overlay */
+}
+
+.cart-message {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
 }

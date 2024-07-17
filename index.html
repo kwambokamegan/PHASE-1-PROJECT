@@ -21,16 +21,18 @@
                 <h2>Selected Dress</h2>
                 <div id="dress-display">
                     <p>Select a dress from the list...</p>
-                    <div id="alterations-section">
-                        <h3>Alterations Request</h3>
-                        <textarea id="alterations-text" rows="4" placeholder="Enter your alteration requests..."></textarea>
-                        <button id="submit-alterations">Submit Alterations</button>
-                    </div>
-                    <button id="purchase-button">Purchase Dress</button>
                 </div>
+                <div id="alterations-section" style="display: none;">
+                    <h3>Alterations Request</h3>
+                    <textarea id="alterations-text" rows="4" placeholder="Enter your alteration requests..."></textarea>
+                    <button id="submit-alterations">Submit Alterations</button>
+                </div>
+                <button id="purchase-button" style="display: none;">Purchase Dress</button>
             </div>
         </div>
     </main>
+
+    <div id="cart-message" class="cart-message"></div>
 
     <script src="app.js"></script>
 </body>
