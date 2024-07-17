@@ -1,14 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Playwrite+CU:wght@100..400&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Playwrite+CL:wght@100..400&family=Playwrite+CU:wght@100..400&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Playwrite+BE+VLG:wght@100..400&family=Playwrite+CL:wght@100..400&family=Playwrite+CU:wght@100..400&display=swap');
+
+
+
 h1{
-   font-family:Playwrite CL ;
+    font-family:Playwrite BE VLG ;
 }
 
-h2{
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
     font-family:Kalnia Glaze ;
-}
+} 
+
 
 * {
     margin: 0;
@@ -45,10 +50,7 @@ header {
     flex: 2;
 }
 
-h2 {
-    font-size: 1.6rem;
-    margin-bottom: 10px;
-}
+
 
 #dress-list {
     display: grid;
@@ -57,26 +59,40 @@ h2 {
 }
 
 .dress-item {
+    position: relative;
+    overflow: hidden;
     border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-    width: 10cm; /* Set width to 10cm */
-    height: 3cm; /* Set height to 3cm */
+    width: 10cm;
+    height: 3cm; /* Adjusted height to accommodate image and text */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center; /* Center items horizontally */
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #fff;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    cursor: pointer; /* Add pointer cursor */
+}
+
+.dress-item:hover {
+    background-color: lightblue; /* Change background color on hover */
 }
 
 .dress-image {
-    max-width: 100%;
-    max-height: 100%;
-    width:100;
+    width: 100%; /* Ensure image covers entire box */
     height: auto;
-    margin-bottom: 20px; /* Add margin to separate image from text */
+    object-fit: cover; /* Maintain aspect ratio */
 }
 
 .dress-name {
-    font-weight: bold;
-    font-family:Playwrite CL ;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for name */
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    pointer-events: none; /* Prevent click events on the name overlay */
 }

@@ -67,35 +67,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Set selected dress
                 selectedDress = dress;
+
+                // Re-add event listeners for purchase and submit alterations buttons
+                addPurchaseEventListener();
+                addSubmitAlterationsEventListener();
             });
 
             dressList.appendChild(dressItem);
         });
     };
 
-    // Event listener for purchase button
-    purchaseButton.addEventListener('click', () => {
-        if (selectedDress) {
-            cartItems.push(selectedDress);
-            updateCart();
-            resetSelectedDress();
-            displayCartMessage(`You have successfully purchased ${selectedDress.name}. Have a happily ever after!`);
-        } else {
-            displayCartMessage('Please select a dress before adding to cart.');
-        }
-    });
+    // Function to add event listener for purchase button
+    const addPurchaseEventListener = () => {
+        purchaseButton.addEventListener('click', () => {
+            if (selectedDress) {
+                cartItems.push(selectedDress);
+                updateCart();
+                resetSelectedDress();
+                displayCartMessage(`You have successfully purchased ${selectedDress.name}. Have a happily ever after!`);
+            } else {
+                displayCartMessage('Please select a dress before adding to cart.');
+            }
+        });
+    };
 
-    // Event listener for submit alterations button
-    submitAlterationsButton.addEventListener('click', () => {
-        const alterations = alterationsText.value.trim();
-        if (alterations !== '') {
-            displayCartMessage(`Thank you for your alterations request for ${selectedDress.name}.`);
-            // Here you could send the alterations data to your server if needed
-            // Example: sendAlterations(selectedDress.id, alterations);
-        } else {
-            displayCartMessage('Please enter your alteration requests.');
-        }
-    });
+    // Function to add event listener for submit alterations button
+    const addSubmitAlterationsEventListener = () => {
+        submitAlterationsButton.addEventListener('click', () => {
+            const alterations = alterationsText.value.trim();
+            if (alterations !== '') {
+                displayCartMessage(`Thank you for your alterations request for ${selectedDress.name}.`);
+                // Here you could send the alterations data to your server if needed
+                // Example: sendAlterations(selectedDress.id, alterations);
+            } else {
+                displayCartMessage('Please enter your alteration requests.');
+            }
+        });
+    };
 
     // Function to update the cart display
     const updateCart = () => {
