@@ -145,7 +145,8 @@ Megan Kwamboka Nyakina
 (`https://github.com/kwambokamegan/PHASE-1-PROJECT`)
 
 ### Vercel link
-(`https://phase-1-project-kcbs.vercel.app/`)
+
+[Link]()
 
 
 

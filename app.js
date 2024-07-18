@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to fetch dress data from the server
     const fetchDresses = async () => {
         try {
-            const response = await fetch('http://localhost:3000/dresses');
+            const response = await fetch('https://wedding-dress-back-end.vercel.app/dresses');
             if (!response.ok) {
                 throw new Error('Network Error');
             }
