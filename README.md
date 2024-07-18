@@ -142,11 +142,10 @@ Megan Kwamboka Nyakina
 18/07/2024
 
 ### Git hub link
-
-[Git hub link](`https://github.com/kwambokamegan/PHASE-1-PROJECT`)
+(`https://github.com/kwambokamegan/PHASE-1-PROJECT`)
 
 ### Vercel link
-[Vercel link](`https://phase-1-project-kcbs.vercel.app/`)
+(`https://phase-1-project-kcbs.vercel.app/`)
 
 
 
