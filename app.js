@@ -1,11 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Variables to store references to HTML elements
     const dressList = document.getElementById('dress-list');
     const dressDisplay = document.getElementById('dress-display');
     const purchaseButton = document.getElementById('purchase-button');
     const alterationsText = document.getElementById('alterations-text');
     const submitAlterationsButton = document.getElementById('submit-alterations');
     const cartMessage = document.getElementById('cart-message');
+    const toggleModeButton = document.getElementById('toggle-mode');
 
+    // Placeholder for selected dress
     let selectedDress = null;
 
     // Function to fetch dress data from the server
@@ -13,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const response = await fetch('http://localhost:3000/dresses');
             if (!response.ok) {
-                throw new Error('Network response was not ok');
+                throw new Error('Network Error');
             }
             const dresses = await response.json();
             return dresses;
@@ -29,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         dresses.forEach(dress => {
             const dressItem = document.createElement('div');
             dressItem.classList.add('dress-item');
-
+               
             const dressImage = document.createElement('img');
             dressImage.src = dress.image;
             dressImage.alt = dress.name;
@@ -53,23 +56,22 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to handle dress selection
     const selectDress = (dress) => {
         selectedDress = dress;
-        const detailsHTML = `
-            <h3>${dress.name}</h3>
+        const detailsHTML = 
+            `<h3>${dress.name}</h3>
             <img src="${dress.image}" alt="${dress.name}" class="dress-details-image">
             <p><strong>Price:</strong> ${dress.price}</p>
-            <p><strong>Description:</strong> ${dress.description}</p>
-        `;
+            <p><strong>Description:</strong> ${dress.description}</p>`;
+        
         dressDisplay.innerHTML = detailsHTML;
 
-        // Show purchase button and alterations section
+        // Show purchase button and alterations 
+
         purchaseButton.style.display = 'block';
         document.getElementById('alterations-section').style.display = 'block';
-
-        // Clear alterations text area
-        alterationsText.value = '';
     };
 
     // Event listener for purchase button
+
     purchaseButton.addEventListener('click', () => {
         if (selectedDress) {
             displayMessage(`Thank you for shopping with us. Have a happily ever after!`);
@@ -79,25 +81,53 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Event listener for submit alterations button
+
     submitAlterationsButton.addEventListener('click', () => {
         const alterations = alterationsText.value.trim();
         if (alterations !== '') {
-            displayMessage(`Your dress will be altered as required then delivered. Thank you for shopping with us.`);
+            displayMessage(`You can now purchase the dress then come for it to be altered.`);
         } else {
-            displayMessage('Please enter your alteration requests.');
+            displayMessage('Please enter your alteration requests and dress size.');
         }
     });
 
-    // Function to display messages
+    
+    alterationsText.addEventListener('keydown', (event) => {
+        const maxLength = 300;  // maximum length for alterations text
+        const currentLength = alterationsText.value.length;
+
+        console.log('Key pressed:', event.key);
+
+        // Limiting the length of text input
+
+        if (currentLength >= maxLength && event.key !== 'Backspace') {
+            event.preventDefault(); 
+        }
+    
+    });
+
+    alterationsText.addEventListener('change', (event) => {
+        console.log('Value changed:', event.target.value);
+    
+
+        const userInput = event.target.value;
+        if (userInput.trim() === '') {
+            alert('Please enter your alteration requests and dress size.');
+        }
+    });
+
+    // display messages
+
     const displayMessage = (message) => {
         cartMessage.textContent = message;
         cartMessage.style.display = 'block';
         setTimeout(() => {
             cartMessage.style.display = 'none';
-        }, 3000);
+        }, 4000);
     };
 
-    // Initial fetch and render of dress list
+    // Initial fetch and render t
+
     fetchDresses()
         .then(dresses => renderDressList(dresses))
         .catch(error => console.error('Error fetching and rendering dresses:', error));

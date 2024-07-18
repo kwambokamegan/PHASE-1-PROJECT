@@ -12,40 +12,32 @@ h2 {
     font-family: Kalnia Glaze;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+h3{ 
+    font-family: Kalnia Glaze;
 }
+
+
 
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #F4C2C2;
-    padding: 20px;
-}
+    background-color:#C9A9A6 ;
+}   
 
 header {
     background-color: crimson;
-    color: #F4C2C2;
+    color: #F4C2C2;/*this is for the text color*/
     text-align: center;
-    padding: 10px 0;
+    padding: 10px ;
 }
 
 .container {
-    display: flex;
+    display:flexbox;
     justify-content: space-between;
     margin-top: 20px;
 }
 
-.left {
-    flex: 1;
-    margin-right: 20px;
-}
 
-.right {
-    flex: 2;
-}
 
 #dress-list {
     display: grid;
@@ -92,6 +84,26 @@ header {
     pointer-events: none; /* Prevent click events on the name overlay */
 }
 
+/* New styles for business description box */
+.business-description {
+    background-color: #F4C2C2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Added margin to separate from other content */
+}
+
+.business-description h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: crimson;
+}
+
+.business-description p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
 .cart-message {
     position: fixed;
     bottom: 20px;
@@ -103,3 +115,29 @@ header {
     border-radius: 5px;
     display: none;
 }
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F4C2C2;
+    padding: 20px;
+    color: black;
+}
+
+.footer-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-content .contact-us,
+.footer-content .wedding-planning,
+.footer-content .payment-options {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-content p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+

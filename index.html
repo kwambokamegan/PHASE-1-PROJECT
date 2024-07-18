@@ -3,15 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Megan's Dress Collection</title>
+    <title>HAPPILY EVER AFTER</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <h1>HAPPILY EVER AFTER DRESSES</h1>
+        
     </header>
+    
+    <!--main content of the web page-->
 
     <main>
+        <div class="right">
+            <div class="business-description">
+                <h2>About Us</h2>
+                <p>Welcome to Happily Ever After Dresses! We specialize in providing exquisite wedding dresses, ensuring you find the perfect outfit for your special moments.</p>
+                <p>Explore our collection and select the dress that fits your style. Feel free to submit any alteration requests to make your dress uniquely yours.</p>
+            </div>
+
+        <div id="welcome-image">
+            <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDA3bHJhcmVydG1wdTlsY2JzbmZnZTRnYjQzMGo5bzRwZ2plYjhibCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/iCwpsNneOFekkbMsY3/giphy.webp" alt="welcome-image">
+        </div>
+
         <div class="container">
             <div class="left">
                 <h2>Dress List</h2>
@@ -20,19 +34,43 @@
             <div class="right">
                 <h2>Selected Dress</h2>
                 <div id="dress-display">
-                    <p>Select a dress from the list...</p>
+                    <p>Select a dress from the list on the right...</p>
                 </div>
                 <div id="alterations-section" style="display: none;">
-                    <h3>Alterations Request</h3>
-                    <textarea id="alterations-text" rows="4" placeholder="Enter your alteration requests..."></textarea>
-                    <button id="submit-alterations">Submit Alterations</button>
+                    <h3>Alterations & Size Request</h3>
+                    <textarea id="alterations-text" rows="5" placeholder="Please enter your alteration requests and dress size ..."></textarea>
+                    <button id="submit-alterations">Submit</button>
                 </div>
                 <button id="purchase-button" style="display: none;">Purchase Dress</button>
             </div>
         </div>
     </main>
 
+    <footer>
+        <div class="footer-content">
+
+            <div class="wedding-planning">
+                <h3>We Can Also Plan Your Wedding</h3>
+                <p>Let us make your special day even more special with our wedding planning services.</p>
+            </div>
+            <div class="payment-options">
+                <h3>Payment Options</h3>
+                <p>We accept Visa, Mastercard, American Express, PayPal, cash payments and any other pre-discussed payment methods.</p>
+            </div>
+
+            <div class="contact-us">
+                <h3>Contact Us</h3>
+                <p>Email: info@happilyeverafterdresses.com</p>
+                <p>TikTok: @happilyeverafterdresses</p>
+                <p>Instagram: @happilyeverafterdresses</p>
+            </div>
+        </div>
+    </footer>
+
+
     <div id="cart-message" class="cart-message"></div>
+
+    
 
     <script src="app.js"></script>
 </body>
