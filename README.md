@@ -133,6 +133,20 @@ The app.js fetches data from the link ahd is able to get it to be displayed in t
 
 It works assynchronously hence the code continues to run as long running tasks like fetching data from the server continue.
 
+### Author
+
+Megan Kwamboka Nyakina
+
+### Date
+
+18/07/2024
+
+### Git hub link
+
+(https://github.com/kwambokamegan/PHASE-1-PROJECT)
+
+### Vercel link
+
 
 
 
